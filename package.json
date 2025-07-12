@@ -13,9 +13,12 @@
     "dev": "rollup -c -w",
     "prepare": "npm run build"
   },
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/aminrms/react-native-modals"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "react",
