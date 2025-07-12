@@ -54,7 +54,7 @@ function CartButton() {
   } = useHistoryModals();
 
   const openCart = () => {
-    openModal('CartItemsBottomSheet', { cartId: 101 });
+    openModal({modalId:'CartItemsBottomSheet', cartId:101});
   };
 
   const closeCart = () => {
@@ -122,7 +122,7 @@ This hook returns an object with the following properties:
 
 | Function / Value           | Description                                                                 |
 |---------------------------|-----------------------------------------------------------------------------|
-| `openModal(id, data?)`    | Opens a modal by its id and pushes a new entry to the browser history.     |
+| `openModal({modalId:id,...data?})`    | Opens a modal by its id and pushes a new entry to the browser history.     |
 | `closeModal(id?)`         | Closes a modal. If id is provided, it closes that specific modal.          |
 | `openModalChecker(id)`    | Returns a function that opens the modal only if its state exists in history.|
 | `modals`                  | Array of active modals: `{ id: string, data?: any }[]`.                    |
