@@ -27,7 +27,10 @@
     "nextjs",
     "typescript"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": {
+    "name": "Amin Ramezani",
+    "email": "amin.ramezani.7582@gmail.com"
+  },
   "license": "MIT",
   "peerDependencies": {
     "react": "^19.1.0",
